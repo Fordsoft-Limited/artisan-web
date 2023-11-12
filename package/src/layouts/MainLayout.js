@@ -9,6 +9,7 @@ import Blog from '../components/landing/Blog/Blog';
 // import {Link, useLocation } from "react-router-dom"
 import Works from '../components/landing/How it Works/Works';
 import Contact from '../components/landing/Contact/Contact';
+import MyBLOG from '../components/landing/blogs/blog';
 
 const MainLayout = () => {
     // const location = useLocation();
@@ -27,7 +28,7 @@ const MainLayout = () => {
         <Navbar />
         <Home/>
         <About/>
-        <Blog/>
+        <MyBLOG/>
         <Works/>
         <Contact/>
         </div>
