@@ -1,25 +1,29 @@
 .app_about {
   background: #fff;
+  
+//   padding: 60px 20px;
+padding: 5rem 9%;
+//   flex-wrap: wrap;
+  
+  
+}
+.app_about-box{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-//   padding: 60px 20px;
-padding: 5rem 9%;
-//   flex-wrap: wrap;
   gap: 2rem;
-  
 }
 
 @media screen and (max-width: 1004px){
-  .app_about .app_about-content h3 {
+  .app_about-box .app_about-content h3 {
     font-size: 2rem;
    
   }
 }
 
 @media screen and (max-width: 1004px){
-  .app_about{
+  .app_about-box{
     flex-direction: column;
   }
 }
@@ -53,4 +57,21 @@ padding: 5rem 9%;
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
+}
+.app__about-slogan{
+  width: 100%;
+
+}
+.app__about-line{
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+.app__about-slogan p{
+  color: brown;
+  font-size: 18px;
+
 }

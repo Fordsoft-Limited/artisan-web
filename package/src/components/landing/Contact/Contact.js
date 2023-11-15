@@ -6,6 +6,7 @@ import mobile from '../../../assets/images/bg/mobile.png'
 
 import './Contact.scss'
 
+
 const Contact = () => {
   return (
     <div className="app__contact  app__flex" id="contact">
@@ -49,6 +50,23 @@ const Contact = () => {
 
         <div className="app__flex">
           <input className="p-text" type="email" placeholder="Your Email" name="email" />
+        </div>
+
+        <div className="app__flex">
+          <input
+            className="contact-text"
+            type="phone"
+            placeholder="Your Phone"
+            name="phone"
+          />
+        </div>
+        <div className="app__flex">
+          <input
+            className="contact-text"
+            type="location"
+            placeholder="Your Location"
+            name="location"
+          />
         </div>
 
         <div>

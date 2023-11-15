@@ -8,11 +8,12 @@ import { Navigate } from "react-router-dom";
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 const MainLayout = lazy(()=> import("../layouts/MainLayout.js"));
-const MainPage = lazy(() => ("../components/landing/MainPage.js"))
+const MainPage = lazy(() =>import ("../components/landing/MainPage.js"));
+const Abouts = lazy(() =>import ("../components/landing/About/About.js"));
 
 
-/***** Pages ****/
-
+// /***** Pages ****/
+// const Contact = lazy(() => import("../components/landing/Contact/Contact"))
 const Starter = lazy(() => import("../views/Starter.js"));
 const About = lazy(() => import("../views/About.js"));
 const Alerts = lazy(() => import("../views/ui/Alerts"));
@@ -31,13 +32,20 @@ const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
 const ThemeRoutes = [
   {
     path: "/main",
-    element: <MainLayout />,
+    element: <MainPage />,
     children: [
-      {path: "/main", element:<Navigate to="/main"/>},
-      // { path: "/main", exact: true, element: <MainPage /> },
+      {
+        path: "/main", // Note: no leading slash here
+        element: <MainLayout />,
 
-    ],
-  },
+      },
+      {
+        path: "/main/about", // Note: no leading slash here
+        element: <Abouts />,
+        
+      }
+      ],
+    },
   {
     path: "/",
     element: <FullLayout />,
@@ -55,13 +63,13 @@ const ThemeRoutes = [
       { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
     ],
   },
-  {
-    path: "**",
-    element: <MainPage/>,
-    children:[
-      {path: "*", element:<MainPage/>},
-    ]
-  }
+  // {
+  //   path: "*/*",
+  //   element: <MainPage/>,
+  //   children:[
+  //     {path: "*", element:<MainPage/>},
+  //   ]
+  // }
 
 
 ];

@@ -55,7 +55,7 @@ const navigation = [
   },
   {
     // title: "Main",
-    href: "/mainland"
+    href: "/landing"
   }
 ];
 
@@ -73,6 +73,8 @@ const Sidebar = () => {
         : "nav-link text-secondary py-3"
     } />;
   }
+
+
 
   return (
     <div className="p-3">

@@ -1,0 +1,131 @@
+.app__blog{
+    display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.app__blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+  }
+  
+  .app__blog img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .app__blog-card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  
+  }
+  
+  
+  
+  .app__blog-card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  
+  .app__blog-tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+  }
+  
+  .app__blog-tag + .app__blog-tag {
+    margin-left: .5em;
+  }
+  
+  .app__blog-tag-blue {
+    background: #56CCF2;
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    color: #fafafa;
+  }
+  
+  .app__blog-tag-brown {
+    background: #D1913C;
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
+    color: #fafafa;
+  }
+  
+  .app__blog-tag-red {
+    background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+  }
+  
+  .app__blog-card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  
+  .app__blog-card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  .app__blog-user {
+    display: flex;
+    gap: .5rem;
+  }
+  
+  .app__blog-user__image {
+    border-radius: 50%;
+   
+  
+  }
+  
+  .app__blog-user__info > small {
+    color: #666;
+  }
+  input {
+    width: 66%;
+    border-radius: 26px;
+    border: 1px solid #ada9a9;
+    padding: 1% 6%;
+    margin: 1% 1%;
+    background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: 0;
+    background-position: 12px;
+    background-size: 16px;
+   
+  }
+      .app__blog-user-link{
+        display: flex;
+        justify-content: space-between
+            }
+            .app__blog-link{
+              margin-left: 105px;
+            align-self: flex-end;
+            margin-top: 10px;
+              
+            }
+            .app__blog-link a{
+              text-decoration: none;
+              color: brown;
+              font-size: 12px;
+            }
+        .app__blog-link :hover{
+          color: blue;
+        }
