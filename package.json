@@ -25,7 +25,7 @@
     "reactstrap": "9.1.10",
     "sass": "1.63.2",
     "web-vitals": "3.3.2",
-    "homepage": "https://github.com/Fordsoft-Limited/artisan-web"
+    "homepage": "https://fordsoft-limited.github.io/artisan-web"
   },
   "scripts": {
     "start": "react-scripts start",
