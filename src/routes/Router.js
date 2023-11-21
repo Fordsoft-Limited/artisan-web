@@ -32,20 +32,12 @@ const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
 const ThemeRoutes = [
   {
     path: "/main",
-    element: <MainPage />,
+    element: <MainLayout />,
     children: [
-      {
-        path: "/main", // Note: no leading slash here
-        element: <MainLayout />,
-
-      },
-      {
-        path: "/main/about", // Note: no leading slash here
-        element: <Abouts />,
-        
-      }
-      ],
-    },
+      { path: "/main", element: <MainPage /> },
+      { path: "main/about", element: <Abouts /> },
+    ],
+  },
   {
     path: "/",
     element: <FullLayout />,
