@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkstarter_bt5=self.webpackChunkstarter_bt5||[]).push([[753],{2753:(s,e,t)=>{t.r(e),t.d(e,{default:()=>c});t(2791);var r=t(7689),a=t(184);const c=()=>(0,a.jsx)("div",{children:(0,a.jsx)("div",{children:(0,a.jsx)(r.j3,{})})})}}]);
+//# sourceMappingURL=753.028f918a.chunk.js.map
