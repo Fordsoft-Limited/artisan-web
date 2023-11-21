@@ -21,13 +21,16 @@
     "react-scroll": "^1.9.0",
     "reactstrap": "9.1.10",
     "sass": "1.63.2",
-    "web-vitals": "3.3.2"
+    "web-vitals": "3.3.2",
+    "homepage": "https://Fordsoft-Limited.github.io/artisan-web/package/"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "7.22.5",
+    "gh-pages": "^6.1.0",
     "react-scripts": "5.0.1"
   },
   "overrides": {
