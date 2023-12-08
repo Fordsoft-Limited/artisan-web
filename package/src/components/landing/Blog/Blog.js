@@ -19,9 +19,9 @@ const Blog = () => {
         <h1>we untold stories</h1>
     </div>
 
-    <div className="app__blogs-box-container"data-aos="fade-up" data-aos-delay="1000">
+    <div className="app__blogs-box-container scroll-blogs"data-aos="fade-up" data-aos-delay="1000">
 
-        <div className="app__blogs-box">
+        <div className="app__blogs-box scroll-box">
             <div className="app__blogs-image">
                 <img src={blog1} alt=""/>
             </div>
@@ -48,6 +48,8 @@ const Blog = () => {
                 </div>
             </div>
         </div>
+
+       
 
         <div className="app__blogs-box" >
             <div className="app__blogs-image">
