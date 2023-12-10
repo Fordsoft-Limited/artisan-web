@@ -1,16 +1,21 @@
 .app__blogs .app__blogs-box-container {
   display: grid;
  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+// display: flex;
   gap: 1.5rem;
+  overflow-x: scroll;
 
 }
+
 .app__blogs{
   // background-color: white;
   padding: 5rem 9%;
   
 }
 
+
 .app__blogs .app__blogs-box-container .app__blogs-box {
+  
   border-radius: 16px;
   background: brown;
   overflow: hidden;

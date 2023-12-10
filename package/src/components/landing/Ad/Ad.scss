@@ -1,0 +1,34 @@
+.app__ad{
+    background: #d1d1d1;
+  
+    //   padding: 60px 20px;
+    padding: 2rem 9%;
+}
+.app__ad-box{
+    margin-top: 20px;
+}
+
+.ad {
+	display: flex;
+	overflow: hidden;
+	max-width: 728px;
+    width: 100%;
+	margin: 16px auto;
+}
+
+.ad.is-left {
+	justify-content: flex-start;
+}
+.ad.is-center {
+	justify-content: center;
+}
+.ad.is-right {
+	justify-content: flex-end;
+}
+
+.ad img {
+	display: inline-block;
+	height: 90px;
+	width: 728px;
+	max-width: none;
+}

@@ -3,6 +3,7 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 import about from '../../../assets/images/bg/about-img.jpg'
+import abouts from '../../../assets/images/bg/workmen5.jpg'
 import './About.scss'
 const About = () => {
     useEffect(() => {
@@ -13,7 +14,7 @@ const About = () => {
             <section className="app_about-box" >
 
                 <div className="app_about-image" data-aos="fade-down-right" data-aos-delay="800">
-                    <img src={about} alt="" />
+                    <img src={abouts} alt="" />
                 </div>
 
                 <div className="app_about-content" data-aos="fade-down-left" data-aos-delay="900">
