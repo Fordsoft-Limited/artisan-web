@@ -24,6 +24,11 @@ const Grid = lazy(() => import("../views/ui/Grid"));
 const Tables = lazy(() => import("../views/ui/Tables"));
 const Forms = lazy(() => import("../views/ui/Forms"));
 const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
+const Artisan = lazy(()=> import("../views/Artisan.js"));
+const Blogs = lazy(()=> import("../views/Blogs.js"));
+const Settings = lazy (() => import("../views/Settings.js"));
+const Users = lazy(()=>import("../views/Users.js"))
+const Visitors = lazy(() => import("../views/Visitors.js"))
 
 // const MainPage = lazy(() => import("../components/landing/MainPage.js"))
 
@@ -51,6 +56,11 @@ const ThemeRoutes = [
     element: <FullLayout />,
     children: [
       { path: "/", element: <Navigate to="/starter" /> },
+      { path: "/starter", exact: true, element: <Starter /> },
+      { path: "/artisan", exact: true, element: < Artisan/> },
+      { path: "/blogs", exact: true, element: <Blogs /> },
+      { path: "/settings", exact: true, element: <Settings /> },
+      { path: "/visitor", exact: true, element: <Visitors /> },
       { path: "/starter", exact: true, element: <Starter /> },
       { path: "/about", exact: true, element: <About /> },
       { path: "/alerts", exact: true, element: <Alerts /> },
